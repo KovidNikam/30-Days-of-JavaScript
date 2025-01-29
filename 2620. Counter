@@ -1,0 +1,9 @@
+var createCounter = function(n) {
+    let current = n;
+    
+    return function() {
+        const counter = createCounter(10)
+        return current++;
+    };
+};
+
